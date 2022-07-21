@@ -1,0 +1,11 @@
+.antras {
+    object-fit: contain;
+    background: red;
+}
+div iframe {
+    width:60%;
+    height:60%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}

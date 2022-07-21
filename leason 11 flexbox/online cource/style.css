@@ -1,0 +1,45 @@
+
+
+body {
+    background-color: rgb(230, 220, 220);
+
+  
+}
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+
+header img {
+    height: 3.5rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: yellowgreen;
+    flex-wrap: nowrap;white-space:nowrap;
+}
+header div {
+    flex-wrap: nowrap;
+}
+header div a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: black;
+    flex-wrap: nowrap;
+    margin-right: 20px;
+    
+}
+ 
+main {
+    background: white;
+    padding: 1rem;
+    display: flex;
+}
+

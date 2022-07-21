@@ -1,0 +1,66 @@
+.main {
+    max-width: 350px;
+    border: 0.1px solid rgb(212, 207, 207);
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 20px;
+    width: 350px;
+    
+}
+
+.logoinstagram img  {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+input[type="text"] {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    display: block;
+    width: 70%;
+    height: 30px;
+    border: 0.1px solid rgb(212, 207, 207);
+    background-color: rgba(252, 247, 247, 0.904); 
+}
+
+input[type="password"] {
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    display: block;
+    width: 70%;
+    height: 30px;
+    border: 0.1px solid rgb(212, 207, 207);
+    background-color: rgba(252, 247, 247, 0.904); 
+}
+
+::-webkit-input-placeholder {
+    font-size: 14px;
+    color: rgb(167, 164, 164);
+}
+
+.PasswordLogin button {
+    text-align: center;
+   margin: auto;
+    display: grid;
+    width: 74%;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+background-color: rgb(28, 119, 255);
+color: white;
+border-radius: 5px;
+border: none;
+}
+
+

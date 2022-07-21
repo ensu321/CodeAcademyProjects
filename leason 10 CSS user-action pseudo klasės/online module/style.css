@@ -1,0 +1,65 @@
+body {
+    background-color: darkslategrey;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h2 span {
+    background-color: rgb(182, 74, 173);
+}
+
+input:disabled {
+    color:black;
+    font-weight: bold;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid gray;
+    background-color: rgb(167, 154, 154);
+}
+
+fieldset {
+    border: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+fieldset label {
+    color:white;
+}
+
+input:required {
+    background-color: aqua;
+}
+
+input:invalid {
+    border: 3px red solid;
+}
+input:valid {
+    border: 3px green solid;
+}
+textarea {
+    border: 2px solid black;
+}
+button {
+    background-color: green;
+    color: white;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+}
+
+input[type="checkbox"]:checked + label {
+    color: blue;
+}
+
+button:hover {
+    background-color: darkgreen;
+}

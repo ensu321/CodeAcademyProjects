@@ -1,0 +1,278 @@
+body  {
+    width: 100%;
+    background-color: var(--background-color);
+    margin: 0 auto;
+    font-weight: 400;
+    line-height: 1.75;
+
+}
+
+.social-icons a:hover {
+    color: var(--primary-300);
+  }
+
+.MainContainer {
+    width: 100%;
+}
+
+:root {
+    --teams-color: Rgb(123, 131, 235);
+    --background-color: rgb(238, 231, 231);
+    --heder-color: white;
+    --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --primary-300: #a29dff;
+    
+
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+    padding-left: 20px;
+    padding-right: 40px;
+    background-color: var(--heder-color);
+    
+}
+
+header div {
+    justify-content: space-between;
+}
+
+header div img {
+    padding-top: 20px;
+}
+
+div img {
+    width: 30px;
+   background: white;
+}
+
+.todo {
+    color: var(--teams-color);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    border: 1px;
+    width: 100%;
+   
+}
+
+ section.section {
+    background-color: var(--heder-color);
+    width: 700px;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow:2px 2px #8888887e;
+    padding-bottom: 20px;
+}
+
+
+  .inputdiv {
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    color: red;
+    font-size: 10px;
+
+    
+}
+
+.inputdiv input {
+    background-color: rgb(250, 244, 244);
+    border: none;
+    padding: 5px;
+}
+
+button {
+    color: var(--heder-color);
+    background-color: var(--teams-color);
+    margin-left: 0px;
+    width: 70px;
+    border: none;
+    border-radius: 3px;
+    height: 25px;
+
+}
+
+ .takeoutrash  {
+    background-color: var(--heder-color);
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+    align-self: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow:2px 2px #8888887e;
+    min-height: 70px;
+    box-shadow: 10px 33px 25px 2px rgba(0,0,0,0.3);
+-webkit-box-shadow: 10px 33px 25px 2px rgba(0,0,0,0.3);
+-moz-box-shadow: 10px 33px 25px 2px rgba(0,0,0,0.3);
+box-shadow: var(--shadow-4);
+}
+
+.taskname {
+    text-align: left;
+    font-size: 30px;
+    padding: 5px;
+    padding-top: 15px;
+    padding-left: 50px;
+    
+}
+
+.takeoutrash .taskname a {
+    text-decoration: none;
+    color: black;
+    
+
+} 
+
+.iconstodolist {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    padding-right: 40px;
+    white-space: 0px;
+
+
+}
+
+.iconstodolist img {
+    width: 20px;
+    height: 20px;
+    max-width: 30px;
+    max-height: 30px;
+   
+}
+
+.walkthedog .completedtask a {
+    text-decoration:line-through;
+    color: black;
+
+} 
+
+.completedtask {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 70px;
+    flex-shrink: 50px;
+    font-size: 30px;
+   
+  
+}
+.completedtask img {
+    width: 20px;
+    height: 20px;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.walkthedog .taskwalkthedoglabel a {
+    text-decoration: line-through;
+    color: black;
+
+} 
+
+.walkthedog  {
+    background-color: var(--heder-color);
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+    align-self: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 10px 33px 25px 2px rgba(0,0,0,0.3);
+-webkit-box-shadow: 10px 33px 25px 2px rgba(0,0,0,0.3);
+-moz-box-shadow: 10px 33px 25px 2px rgba(0,0,0,0.3);
+    min-height: 70px;
+    
+  
+}
+
+.taskwalkthedoglabel {
+    display: flex;
+    text-align: left;
+    width: 100%;
+    font-size: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.button {
+  
+    justify-content: center;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .bactotask {
+    display: flex;
+    align-content: center;
+    margin-top: 100px;
+  
+  }
+
+  td {
+    padding: 8px;
+  }
+
+  input[type="text"] {
+    font-weight: bold;
+  }
+
+
+.edittasksection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    border: 1px;
+    width: 100%;
+}
+
+section.edittasksection {
+    background-color: var(--heder-color);
+    width: 700px;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow:2px 2px #8888887e;
+    padding-bottom: 20px;
+}
+
+.editbutton {
+    width: 70%;
+    max-width: 500px;
+} 
+
+section .lblEditScreen {
+    color: rgb(165, 18, 18);
+    margin-top: 10px;
+    
+}
+
+.chkCompleted {
+   padding-left: 100px;
+}

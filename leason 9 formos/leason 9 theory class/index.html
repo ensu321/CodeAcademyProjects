@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Payment form</h1>
+    <form action="/action_page.php" method="post" autocomplete="on">
+
+        <p>Required fields are fallowed by: *</p>
+        <h2>Contact information</h2>
+        <Fieldset>
+            <legend>Title</legend>
+            <label style="cursor: pointer" for="Mister">Mister</label>
+            <input name="Title" id="Mister" type="radio" value="Mister">
+            <br>
+            <label style="cursor: pointer" for="miss">miss</label>
+            <input name="Title" id="miss" type="radio" value="Miss">
+
+        </Fieldset>
+        <fieldset>
+            <label for="Name">Name:*</label>
+            <input type="text" placeholder="name" required>
+            <br>
+            <br>
+            <label for="E-mail">E-mail:*</label>
+            <input type="email" placeholder="email" required>
+            <br>
+            <br>
+            <label for="Password">Password:*</label>
+            <input type="password" placeholder="password" required>
+        </fieldset>
+
+        <h2>Payment information</h2>
+        <fieldset>
+            <label for="CardType">CardType</label>
+            <select name="CardType" id="CardType">CardType
+                <label for="CardType"></label>
+                <option selected value="Visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+            </select>
+            <br>
+            <br>
+            <label for="CardNumber">Card Number:*</label>
+            <input name="CardNumber" placeholder="cardnumber" value="1" type="number" required>
+            <br>
+            <br>
+            <label for="ExpirationDate">Expiration date:*</label>
+            <input name="ExpirationDate" type="date" required minlength="16">
+        </fieldset>
+        <button type="submit">
+            <p>Validate the payment</p>
+
+        </button>
+
+
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+body {
+    background-color: darkviolet;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+
+}
+
+.container {
+    width: 60vh;
+    height: 80vh;
+    border: 5px dotted;
+    border-color: yellow;
+    background-color: rgb(67, 12, 90);
+    
+    
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+    color: rgb(158, 56, 19);
+}
+
+p {
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: rgb(158, 56, 19)
+}
+
+div img {
+    border-top: 20px solid;
+    border-bottom: 20px solid;
+    border-left: 20px solid;
+    border-right: 20px solid;
+    border-top-color: blue;
+    border-bottom-color: green;
+    border-left-color: yellow;
+    border-right-color: red;
+    border-radius: 25%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+    
+   
+}
+
+.image {
+    text-align: center;
+
+   
+    
+}
+
+span {
+    font-size: 40px;
+}

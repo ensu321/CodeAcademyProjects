@@ -1,0 +1,65 @@
+body {
+    background-image: url(https://th.bing.com/th/id/R.486b2c50906ca389d5cc90b811bdc007?rik=5ZdBSqj%2fAXGCow&pid=ImgRaw&r=0);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+h1{
+    text-align: center;
+    color: #333;
+    padding-top: 40px;
+}
+
+div form {
+
+    
+    max-width: 600px;
+    min-width: 400px;
+    min-height: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 40px;
+
+  
+}
+
+fieldset {
+    background-color: rgba(231, 238, 238, 0.979);
+    height: 550px;
+   
+    border: none;
+    box-sizing: border-box;
+    margin: 10px 10px 10px 0;    
+   
+       }
+
+
+
+input, textarea {
+    display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 5px 5px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+ 
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    width: 30%;
+    cursor: pointer;
+    position: relative;
+  }
+
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: 1px solid aqua;
+}

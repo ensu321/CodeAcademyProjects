@@ -1,0 +1,18 @@
+td, th, table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.oranzine {
+    background: orange;
+    color: white;
+}
+.melyna {
+    background: blue;
+    color: white;
+}
+
+.Zalia {
+    background: green;
+    color: white;
+}

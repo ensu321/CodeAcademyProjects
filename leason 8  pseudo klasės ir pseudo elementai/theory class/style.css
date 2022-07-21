@@ -1,0 +1,18 @@
+body {
+	background: gray;
+	padding: 20px;
+}
+
+table {
+	margin: 0 auto;
+	border-collapse: collapse;
+	background: wheat;
+}
+td {
+    width: 40px; height: 40px;
+}
+
+tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd) {
+	background: white;
+}
+

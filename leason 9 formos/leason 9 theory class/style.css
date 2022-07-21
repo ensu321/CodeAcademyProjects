@@ -1,0 +1,33 @@
+
+input[type="radio"]:checked {
+    color: yellow;
+    outline: green solid 2px;
+   
+
+    accent-color: yellow;
+}
+
+input[type="number"] {
+    border-color: red;
+}
+
+
+input:required {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+button {
+    background-color: green;
+}
+
+input:not(:placeholder-shown) {
+    border-color: green;
+  }
