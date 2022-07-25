@@ -1,0 +1,46 @@
+
+
+ .vienas {
+    grid-area: vienas;
+}
+
+.du {
+    grid-area: du;
+}
+
+.trys {
+    grid-area: trys;
+}
+
+.keturi {
+    grid-area: keturi;
+}
+
+.penki {
+    grid-area: penki;
+}
+
+.sesi {
+    grid-area: sesi;
+}
+.septyni {
+    grid-area: septyni;
+}
+
+
+.MainContainer {
+display: grid;
+grid-template-columns: 20% 20% 20% 20% 20% 20% 20%;
+grid-template-rows: 50px 10rem 20%;
+grid-template-areas: 
+"vienas vienas vienas vienas vienas keturi keturi"
+"du trys trys keturi keturi keturi keturi";
+
+background-color: green;
+padding: 5px;
+height: 10vh;
+
+}
+
+
+
