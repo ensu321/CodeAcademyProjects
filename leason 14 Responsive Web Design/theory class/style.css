@@ -1,0 +1,78 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
+    background-color: lightgray;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgreen;
+    border: 2px dotted black;
+    width: 100%;
+}
+
+.podesine .vienas {
+    width: 100%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    border: 2px dotted black;
+    text-align: center;
+}
+
+.podesine {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+.middle34 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto 0;
+    
+}
+
+.middle34 .sidemenu  {
+    padding: 1vw;
+    max-width: 100px;
+    border: 2px dotted black;
+}
+
+.middle34 .trysmiddle {
+    padding: 10vw;
+    border: 2px dotted black;
+}
+
+.middle34 .keturimiddle {
+    padding: 10vw;
+    border: 2px dotted black;
+}
+
+.middle34, .sidemenu,  .trysmiddle, .keturimiddle {
+    width: 100%;
+}
+
+.flex .cancercell {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.cancercellmain {
+    display: flex;
+    width: 100%;
+}
+
+.cancercellmain .cancercell {
+    padding: 10vw;
+    border: 2px dotted black;
+    background-color: lightgreen;
+
+}

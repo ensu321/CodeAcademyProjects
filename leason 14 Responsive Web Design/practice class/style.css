@@ -1,0 +1,102 @@
+
+body {
+    background-color: lightgray;
+    
+    margin: 0 auto;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainContainer {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-rows: 1fr 50px 50px 50px;
+    grid-gap: 1.2rem;
+    
+}
+
+.MainContainer .header {
+    grid-column: 1/6;
+  
+    padding: 2vh;
+}
+
+.MainContainer .header h1 {
+    font-size: 2em;
+}
+
+.MainContainer .header img {
+    width: 5vh;
+}
+
+.MainContainer .Navigation {
+    grid-column: 1/6;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 30%);
+    padding: 1.5rem;
+    word-spacing: 1rem;
+    text-align: left;
+    height: 1.2rem;
+}
+
+.MainContainer .Navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+.MainContainer .sidemenuLogin {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 30%);
+    padding: 1rem;
+    height: 1rem;
+    margin-top: 1rem;
+    
+   
+}
+
+.MainContainer .sidemenuhelp {
+    grid-row: 4/5;
+
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 30%);
+    padding: 1rem;
+    height: 1rem;
+   
+
+}
+
+.MainContainer .sidemenuhelp a {
+    text-decoration: none;
+color: black;
+font-weight: bold;
+}
+.MainContainer .sidemenuLogin a {
+    text-decoration: none;
+color: black;
+
+}
+
+.MainContainer .Content {
+    grid-column: 2/6;
+    grid-row: 3/5;
+    background: #fff;
+    margin-top: 1rem;
+    padding: 1.5rem;
+}
+
+.MainContainer .Content h2 {
+    margin: 0;
+}
+
+.MainContainer .Content p {
+    margin: 5px;
+}
+
