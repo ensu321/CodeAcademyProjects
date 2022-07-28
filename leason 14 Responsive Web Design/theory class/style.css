@@ -1,41 +1,58 @@
+
 body {
     width: 100%;
-    height: 100%;
-    margin: auto 0;
-    background-color: lightgray;
+    margin: auto 0px;
+    
+    
 }
+.grandfather {
+    height: 100%;
+    margin: auto 0px;
+    flex-wrap: wrap;
+    
+    
+}
+
+
 
 .flex {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+   
     background-color: lightgreen;
     border: 2px dotted black;
     width: 100%;
+    text-align: center;
+   
+    
 }
 
-.podesine .vienas {
+.pokairevienas .vienas {
     width: 100%;
     padding-top: 3vh;
     padding-bottom: 3vh;
     border: 2px dotted black;
     text-align: center;
+    
+    
+    
 }
 
-.podesine {
+.pokairevienas {
     display: flex;
     flex-direction: column;
     width: 100%;
+    
+    
 }
-
-
 
 .middle34 {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin: auto 0;
+    
+    
     
 }
 
@@ -43,36 +60,89 @@ body {
     padding: 1vw;
     max-width: 100px;
     border: 2px dotted black;
+    
+    
 }
 
 .middle34 .trysmiddle {
     padding: 10vw;
     border: 2px dotted black;
+    
+    
 }
 
 .middle34 .keturimiddle {
     padding: 10vw;
     border: 2px dotted black;
+   
+    
 }
-
-.middle34, .sidemenu,  .trysmiddle, .keturimiddle {
+.middle34,  .trysmiddle, .keturimiddle {
     width: 100%;
 }
 
-.flex .cancercell {
+
+/* .flex .cancercellketuri {
     display: flex;
-    flex-direction: row;
+   
     width: 100%;
+    flex: 1;
+
+} */
+
+
+.cancercell56main .cancercellmain .cancercellketuri4 .cancercellketuri {
+    height: 100%;
+    
+    
+}
+.cancercell56main .cancercellmain .cancercellketuri4 {
+    width: 35%;
+    text-align: center;
+   
+    
+
 }
 
 .cancercellmain {
     display: flex;
     width: 100%;
+    
+    
 }
 
-.cancercellmain .cancercell {
-    padding: 10vw;
+.cancercellmain .cancercellketuri {
+  
     border: 2px dotted black;
     background-color: lightgreen;
-
+    
+    
 }
+
+.cancercell56main .cancercell5,  .cancercell56 {
+    background-color: lightgreen;
+    border: 2px dotted black;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    border: 2px dotted black;
+    text-align: center;
+  
+   
+}
+
+
+
+.cancercell56main .cancercellmain .flex .middle34 {
+    width: 100%;
+    flex-wrap: ;
+    
+}
+
+.cancercell56main .cancercellmain .flex .middle34 .sidemenu {
+    background-color: aqua;
+    width: 100%;
+    
+    
+}
+
+
