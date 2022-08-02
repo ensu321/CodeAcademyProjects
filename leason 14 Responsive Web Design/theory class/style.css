@@ -91,10 +91,10 @@ body {
 } */
 
 
-.cancercell56main .cancercellmain .cancercellketuri4 .cancercellketuri {
-    height: 100%;
-    
-    
+.cancercellketuri  {
+    height: 170%;
+    margin-top: -80px;
+
 }
 .cancercell56main .cancercellmain .cancercellketuri4 {
     width: 35%;
@@ -126,6 +126,8 @@ body {
     padding-bottom: 3vh;
     border: 2px dotted black;
     text-align: center;
+    width: 93%;
+    float: right;
   
    
 }
@@ -141,8 +143,19 @@ body {
 .cancercell56main .cancercellmain .flex .middle34 .sidemenu {
     background-color: aqua;
     width: 100%;
+    margin-bottom: -158px;
+    margin-left: -2px;  
     
+}
+
+@media screen and (max-width: 600px) {
+
     
+.cancercell56main .cancercellmain .flex .middle34 .sidemenu {
+    display: none;
+}
+
+
 }
 
 
