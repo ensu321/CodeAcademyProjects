@@ -43,10 +43,15 @@ header div {
 
 header div img {
     padding-top: 20px;
+    width: 41px;
+    height: 35px;
+
+
 }
 
 div img {
-    width: 30px;
+    width: 41px;
+    height: 35px;
    background: white;
 }
 
@@ -174,6 +179,7 @@ box-shadow: var(--shadow-4);
 .completedtask img {
     width: 20px;
     height: 20px;
+    
     max-width: 30px;
     max-height: 30px;
 }

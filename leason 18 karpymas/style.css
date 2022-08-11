@@ -1,0 +1,340 @@
+/* basic css for the main body  */
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.mainContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+.mainColumnWrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 6000px;
+    overflow: hidden;
+    overflow-y: auto;
+    
+    
+}
+/* setting variables  */
+
+:root {
+    --varTeamsColorViolet: rgb(70, 78, 184);
+    --varTeamsColorVioletLight: rgb(123, 131, 235);
+    --varFontWhiteColor: rgb(255,250,250);
+    --varFontFamilyText: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+/*  CSS for the header section  */
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+ 
+    transition: top 0.3s;
+    
+}
+.socialogos {
+    display: flex;
+    align-items: center;
+}
+.socialogos img {
+    width: 30px;
+    height: 30px;
+}
+
+span {
+    color: var(--varTeamsColorVioletLight);
+}
+
+
+/*  CSS for continue exploring section  */
+.continueExploring {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--varTeamsColorViolet);
+    align-items: center;
+    height: 100vh;
+   
+    justify-content: center;
+}
+.continueExploringH2 {
+    color: var(--varFontWhiteColor);
+    letter-spacing: 5px;
+    font-family: var(--varFontFamilyText);
+}
+
+.continueExploringP {
+ color: var(--varFontWhiteColor); 
+ font-family: var(--varFontFamilyText);
+ text-align: center;
+ margin-left: 20px; 
+ margin-right: 20px; 
+}
+
+.buttonExploreTours {
+    background-color: rgb(71, 78, 184);
+    border: none;
+    width: 28vw;
+    height: 4vh;
+    -webkit-box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48); 
+box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48);}
+
+.hrefbutton {
+    text-decoration: none;
+    color: var(--varFontWhiteColor);
+}
+
+
+
+/*  CSS for the aboutUS section */
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5vh;
+   
+}
+.aboutUSimage img {
+    
+        width: 80vw;
+        max-width: 500px;
+        height: 40vh;
+}
+.aboutUSArticle {
+    width: 80vw;
+    text-align: center;
+}
+.aboutUSReadMoreA  {
+    display: flex;
+    width: 80vw;
+    justify-content: flex-start;
+    padding-top: 20px;
+    text-decoration: none;
+    color: var(--varTeamsColorVioletLight);
+}
+
+
+/*  CSS for the Our Services  */
+
+#OurServices {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(248, 248, 248);
+
+}
+
+.OurServicesWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.OurServicesBlocks {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    gap: 20px;
+    justify-content: center;
+}
+
+.OurServicesAmazingComfortImg, .OurServicesendlessHikingImg, .OurServicesSavingMoneyImg {
+    width: 50px;
+    height: 50px;
+}
+
+.SavingMoney, .AmazingComfort, .endlessHiking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/*  CSS for featured tours section  */
+
+#FeaturedTours {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.wrapperFeaturedTours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.featuredToursImage {
+    width: 80vw;
+    max-width: 500px;
+    height: 40vh;
+    position: relative;
+
+ 
+}
+
+.HeaderFeaturedToursH2 {
+    letter-spacing: 5px;
+}
+
+.FeaturedToursFooter {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    
+}
+
+.FeaturedToursFooterCountry {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 7%;
+}
+.FeaturedToursFooterCountryLabel {
+    color: var(--varTeamsColorVioletLight);
+}
+.FeaturedToursFooterCountryPrice {
+    font-weight: bold;
+    padding-right: 10%;
+}
+
+.FeaturedToursFooterHeader {
+    padding-left: 7%;
+}
+
+.wrapImageAndFooterFeaturedTours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--varFontWhiteColor);
+    border: 0.1px solid rgb(233, 228, 228);
+    border: none;
+    -webkit-box-shadow: 4px 3px 5px -3px rgba(0,0,0,0.54); 
+    box-shadow: 4px 3px 5px -3px rgba(0,0,0,0.54);
+    margin-top: -5px;
+}
+
+
+/*  CSS for the all tours Href  */
+.allTours {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+}
+.AllToursAWrap {
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+}
+.HrefAllTours {
+    text-decoration: none;
+    color: var(--varTeamsColorViolet);
+}
+
+/* This is the CSS for the OUR gallery Section  */
+
+
+.OurGallery {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapOurGallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.galleryImages {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.galleryImages img {
+    width: 100vw;
+    height: 100%;
+}
+.gallerySplitter {
+    height: 5px;
+    background-color: var(--varTeamsColorViolet);
+}
+.OurGalleryHeader {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    letter-spacing: 5px;
+    background-color: rgba(225, 243, 237, 0.541);
+}
+
+.latestTourInfoAndUpdates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-color: var(--varTeamsColorVioletLight);
+    
+}
+
+.WantLatestsTourInfo {
+
+    text-align: justify;
+    height: 35vh;
+
+}
+
+.WantLatestsTourInfo h3 {
+    height:35vh;
+    font-size: 2rem;
+    color: var(--varFontWhiteColor);
+}
+.wrapWantLatestInfoAndUdpatesWithSignUp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5%;
+    width: 40vw;
+}
+
+.SignUpForNewLetterLabel {
+    color: var(--varFontWhiteColor);
+}
+
+.YourEmail {
+    display: flex;
+    width: 40vw;
+}
