@@ -63,17 +63,8 @@ span {
 }
 
 .NavigationHeader {
-    width: 25vw;
     display: none;
-}
-
-.NavigationHeader a {
-    text-decoration: none;
-    gap: 50px;
-    display: flex;
-    flex-direction: row;
-    font-family: var(--varFontFamilyText);
-    color: var(--varFontWhiteColor);
+    
 }
 
 /*  CSS for continue exploring section  */
@@ -479,9 +470,61 @@ color: rgb(103, 111, 118);
 
 /*  CSS media quaries  */
 
-@media screen and (max-width:500px) {
+@media screen and (min-width:700px) {
+    .header {
+        
+        display: flex;
+        width: 100%;
+        
+      
+    }
+.socialogos {
+    display: flex;
+   
+    justify-content: flex-end;
+}
+
+.NavigationHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.NavigationHeader a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-family: var(--varFontFamilyText);
+    color: black;
+}
+
+.NavigationHeader a:hover {
+    text-decoration: underline;
+}
+    
+.wrapAboutUsImageAndAboutUsArticle {
+    display: flex;
+    width: 100vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 10px;
+  }
+
+  .aboutUSimage {
+    min-width: 400px;
+  }
+
+}
+
+@media screen and (min-width:500px) {
 
 
+    .continueExploring {
+        background-image: url(qingbao-meng-01_igFr7hd4-unsplash.jpg);
+    }
 
 
 }
+
+
