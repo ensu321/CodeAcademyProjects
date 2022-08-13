@@ -23,7 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 6000px;
+    height: 5600px;
     overflow: hidden;
     overflow-y: auto;
     
@@ -55,6 +55,10 @@ body {
     width: 30px;
     height: 30px;
 }
+.socialogos img:hover {
+    width: 35px;
+    height: 35px;
+}
 
 span {
     color: var(--varTeamsColorVioletLight);
@@ -71,6 +75,14 @@ span {
    
     justify-content: center;
 }
+.wrapContinueExploring {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
 .continueExploringH2 {
     color: var(--varFontWhiteColor);
     letter-spacing: 5px;
@@ -93,6 +105,15 @@ span {
     -webkit-box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48); 
 box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48);}
 
+.buttonExploreTours:hover {
+    background-color: var(--varTeamsColorVioletLight);
+    border: none;
+    width: 29vw;
+    height: 5vh;
+
+}
+
+
 .hrefbutton {
     text-decoration: none;
     color: var(--varFontWhiteColor);
@@ -101,7 +122,7 @@ box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48);}
 
 
 /*  CSS for the aboutUS section */
-.aboutUs {
+#aboutUs {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -109,7 +130,14 @@ box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48);}
     align-items: center;
     justify-content: flex-start;
     margin-top: 5vh;
-   
+}
+.aboutUSWrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
 }
 .aboutUSimage img {
     
@@ -128,6 +156,9 @@ box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48);}
     padding-top: 20px;
     text-decoration: none;
     color: var(--varTeamsColorVioletLight);
+}
+.aboutUSReadMoreA:hover {
+    color: var(--varTeamsColorViolet);
 }
 
 
@@ -249,10 +280,13 @@ box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48);}
     align-items: center;
     width: 100%;
     height: 20vh;
+
 }
 .AllToursAWrap {
     display: flex;
     width: 80vw;
+    height: 12vh;
+    align-items: center;
     justify-content: center;
 }
 .HrefAllTours {
@@ -263,9 +297,9 @@ box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48);}
 /* This is the CSS for the OUR gallery Section  */
 
 
-.OurGallery {
+#OurGallery {
     width: 100%;
-    height: 80vh;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -274,6 +308,7 @@ box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48);}
     display: flex;
     flex-direction: column;
     width: 100%;
+   
     align-items: center;
 }
 .galleryImages {
@@ -300,12 +335,30 @@ box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48);}
     background-color: rgba(225, 243, 237, 0.541);
 }
 
+.ourGalleryImages { 
+
+width: 100%;
+}
+
+
+
+
+
+/* CSS of latest tour info section */
+
+#latestTourInfoAndUpdates {
+    width: 100%;
+    display: flex;
+    height: 80vh;
+}
+
 .latestTourInfoAndUpdates {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 50vh;
+    padding-bottom: 10% ;
     background-color: var(--varTeamsColorVioletLight);
     
 }
@@ -313,7 +366,8 @@ box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48);}
 .WantLatestsTourInfo {
 
     text-align: justify;
-    height: 35vh;
+    height: 40vh;
+    width: 70%;
 
 }
 
@@ -326,15 +380,85 @@ box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48);}
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 5%;
-    width: 40vw;
+    padding-left: 2%;
+    width: 50vw;
 }
 
 .SignUpForNewLetterLabel {
     color: var(--varFontWhiteColor);
+    display: flex;
+    width: 100%;
+    font-weight: bold;
 }
 
 .YourEmail {
     display: flex;
-    width: 40vw;
+    
+    width: 100%;
+    height: 100%;
+    
 }
+.yourEmailInput {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.yourEmailInput input {
+    width: 90%;
+    margin-right: -35%;
+}
+.yourEmailInput button {
+font-family: var(--varFontFamilyText);
+border-radius: 2px;
+border: none;
+color: rgb(103, 111, 118);
+
+}
+
+.yourEmailInput button:hover {
+    background-color: rgb(192, 184, 184);
+}
+
+/*  Start of footer CSS */
+
+#footer {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(24, 22, 22, 0.973);
+}
+.footerWrap {
+    display: flex;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navFooter {
+    padding: 3%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+.navFooter a {
+    text-decoration: none;
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    font-family: var(--varFontFamilyText);
+    color: var(--varFontWhiteColor);
+}
+.navFooter a:hover {
+    text-decoration: underline;
+}
+
+.footerCopyright {
+    color: var(--varFontWhiteColor);
+    font-family: var(--varFontFamilyText);
+}
+
+
