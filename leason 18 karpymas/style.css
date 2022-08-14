@@ -23,8 +23,9 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 6600px;
-    overflow: hidden;
+    
+    /* height: 8600px;  */
+    overflow-y: auto;
     
 }
 /* setting variables  */
@@ -147,9 +148,14 @@ box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48);}
         max-width: 500px;
         height: 40vh;
 }
+.aboutUSimage {
+    display: flex;
+    justify-content: center;
+}
 .aboutUSArticle {
     width: 80vw;
     text-align: center;
+
 }
 .aboutUSReadMoreA  {
     display: flex;
@@ -163,6 +169,17 @@ box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48);}
     color: var(--varTeamsColorViolet);
 }
 
+.aboutUSReadMoreScreenDesktop {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    padding-top: 20px;
+}
+
+.aboutUSReadMoreADekstop {
+    text-decoration: none;
+    color: var(--varTeamsColorVioletLight);
+}
 
 /*  CSS for the Our Services  */
 
@@ -207,6 +224,13 @@ box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48);}
 
 /*  CSS for featured tours section  */
 
+#FeatureredToursParent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #FeaturedTours {
     display: flex;
     flex-direction: column;
@@ -241,6 +265,7 @@ box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48);}
     display: flex;
     flex-direction: column;
     width: 80vw;
+    max-width: 500px;
     
 }
 
@@ -266,6 +291,7 @@ box-shadow: 4px 4px 14px 5px rgba(0,0,0,0.48);}
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 500px;
     background-color: var(--varFontWhiteColor);
     border: 0.1px solid rgb(233, 228, 228);
     border: none;
@@ -503,28 +529,186 @@ color: rgb(103, 111, 118);
     text-decoration: underline;
 }
     
-.wrapAboutUsImageAndAboutUsArticle {
-    display: flex;
-    width: 100vw;
-    padding-left: 5%;
-    padding-right: 5%;
-    gap: 10px;
-  }
 
-  .aboutUSimage {
-    min-width: 400px;
-  }
 
 }
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:842px) {
 
 
     .continueExploring {
         background-image: url(qingbao-meng-01_igFr7hd4-unsplash.jpg);
     }
 
+    #FeatureredToursParent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        
+      }
+
+      .FeaturedToursLabelDekstop {
+        letter-spacing: 5px;
+      }
+
+      .wrapFeaturedTours {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 95vw;
+        justify-content:space-between;
+        padding: 20px;
+        padding-bottom: 0;
+      }
+     
+      .FeaturedTours {
+        display: FLEX;
+        flex-direction: column;
+      }
+      #FeaturedTours {
+        display: flex;
+        /* max-width: 290px; */
+        max-width: 300px;
+        max-height: 400px;
+       
+       
+      }
+      .wrapperFeaturedTours {
+       display: flex;
+       height: 100%;
+       width: 100%;
+
+      }
+      .wrapImageAndFooterFeaturedTours {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        max-height: 350px;
+        
+      
+     }
+
+     .featuredToursImage {
+        max-width: 300px;
+        max-height: 200px;
+        
+     }
+.FeaturedToursFooter {
+
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    max-height: 200px;
+     background-color: var(--varFontWhiteColor);
+     border: 0.1px solid rgb(233, 228, 228);
+     border: none;
+     -webkit-box-shadow: 4px 3px 5px -3px rgba(0,0,0,0.54); 
+     box-shadow: 4px 3px 5px -3px rgba(0,0,0,0.54);
+     margin-top: -5px;
+     
+    }
+     
+     .headerFeaturedTours {
+        display: none;
+     }
+
 
 }
 
 
+@media screen and (min-width: 768px) 
+{
+
+
+    .wrapAboutUsImageAndAboutUsArticle {
+        display: flex;
+        width: 100vw;
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+    .aboutUSReadMoreA {
+        display: none;
+    }
+    #aboutUs {
+        height: 50vh;
+    }
+    .aboutUSArticle {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        justify-content: center;
+        align-items: center;
+    }
+      .aboutUSimage img {
+        min-width: 200px;
+        max-width: 450px;
+        width: 60vw;
+    
+      }
+      .aboutUSArticle p {
+        padding: 20px;
+      }
+
+      .wrapSavingMoneyAndAmazingComfort {
+        display: flex;
+        flex-direction: row;
+      }
+      #OurServices {
+        height: 40vh;
+      }
+
+      .ourGalleryImages {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+      }
+
+      .galleryImages {
+        display: flex;
+        width: 25vw;
+        height: 27vh;
+        
+      }
+      .galleryImages img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        
+    
+      }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .aboutUSReadMoreScreenDesktop {
+        display: none;
+     }
+}
+
+@media screen and (max-width:500px) {
+    #FeatureredToursParent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #FeaturedTours {
+        margin-bottom: 3%;
+    }
+
+}
+
+/* MEedia QUARIES Hide Featured tours label class FeaturedToursLabelDekstop when the screen size is lower than 842*/
+
+
+@media screen and (max-width:842px) {
+.FeaturedToursLabelDekstop{
+    display: none;
+}
+}
