@@ -1,0 +1,94 @@
+html, body, .mainContainer {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: gray;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100vw;
+}
+
+.img img {
+  height: 150px;
+  scale: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigationcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navigationcontainer .navItems {
+  margin: 5px;
+}
+.navigationcontainer .navItems a {
+  color: rgb(74, 74, 184);
+  text-decoration: none;
+  margin: 10px;
+}
+
+.knyguLentyna {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 15vh;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding-bottom: 25px;
+  background-color: white;
+  margin-top: 20px;
+}
+.knyguLentyna h1 {
+  color: black;
+}
+.knyguLentyna table {
+  width: 95%;
+  text-align: center;
+  border-collapse: collapse;
+}
+.knyguLentyna table tbody tr th {
+  color: black;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+}
+.knyguLentyna table tbody tr td {
+  color: gray;
+  border-bottom: 1px solid gray;
+}
+
+.copyright {
+  color: black;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .header .navigationcontainer {
+    display: flex;
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=index.css.map */

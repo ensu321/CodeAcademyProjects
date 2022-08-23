@@ -1,0 +1,129 @@
+$varh2fontsize: 25px;
+$varAnchorLinkColor: rgb(74, 74, 184);
+$varAnchorTextDecoratioStyle: none;
+$varH3fontsize: 18px;
+$varTableHeaderColor: black;
+$varTableHeaders: black;
+$varTableCellsColor: gray;
+$varBackgroundColor: gray;
+$varCardBackGRoundColor: white;
+
+@mixin headerFlexMobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin headerFlexDesktop {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin anchorStyle {
+    color: $varAnchorLinkColor;
+    text-decoration: $varAnchorTextDecoratioStyle;
+    margin: 10px;
+}
+
+@mixin ContainerFullWidthAndHeight {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+
+}
+
+html, body, .mainContainer {
+    @include ContainerFullWidthAndHeight;
+    @include headerFlexMobile;
+    justify-content: flex-start;
+    background-color: $varBackgroundColor;
+
+}
+
+ .header {
+     @include headerFlexMobile;
+    background-color: $varCardBackGRoundColor;
+    width: 100vw;
+ }
+
+.img img {
+    height: 150px;
+    scale: 1/1;
+    @include headerFlexMobile;
+    
+}
+
+.navigationcontainer {
+@include headerFlexMobile;
+.navItems {
+    margin: 5px;
+    a {
+        @include anchorStyle;
+    }
+}
+}
+
+.knyguLentyna {
+@include headerFlexMobile;
+width: 80vw;
+height: 15vh;
+border: 1px solid gray;
+border-radius: 10px;
+padding-bottom: 25px;
+background-color: $varCardBackGRoundColor;
+margin-top: 20px;
+
+    h1 {
+        color:$varTableHeaderColor;
+    }
+    table {
+        width: 95%;
+        text-align: center;
+        border-collapse: collapse;
+        
+
+       tbody {
+        
+            tr {
+                 th {
+                    color: $varTableHeaderColor;
+                    border-bottom: 1px solid gray;
+                    padding: 5px;
+                 }
+            }
+            tr {
+                td {
+                   color: $varTableCellsColor;
+                   border-bottom: 1px solid gray;
+                }
+           }
+        }
+    }
+}
+
+.copyright {
+    color: $varTableHeaderColor;
+    margin-top: 20px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .header {
+        display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 20px;
+            margin-right: 20px;
+
+             .navigationcontainer{ 
+                display: flex;
+                flex-direction: row;
+             }
+
+    }
+}
+  
+
