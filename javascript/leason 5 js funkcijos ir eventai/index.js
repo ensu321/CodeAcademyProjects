@@ -1,20 +1,25 @@
-const forma = document.querySelector('form').addEventListener('submit', myfunction);
+document.querySelector('form').addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const raidziuSkaicius = document.querySelector('#raide').value;
+    for (i=0; i < raidziuSkaicius; i++)
+    {
+      const newElement = document.createElement('p');
+      document.body.appendChild(newElement);
+      newElement.innerText = "L";
+      
+      // for (j=0; j <= i; j++)
+      // {
+      //   newElement.innerText += "p" ;
+      // }
+    }
 
 
-
-function myfunction(event) {
-
-  event.preventDefault();
- const tex1Value =  document.querySelector('#text1').value;
-console.log(tex1Value);
-const tex2Value = parseInt(document.querySelector('#text2').value);
-console.log(tex2Value);
-const test2ValueToBeUpdated = document.querySelector('h1');
-console.log(test2ValueToBeUpdated);
-tex2Value >= 18 ? test2ValueToBeUpdated.innerText = "Vairuoti gali: " + tex1Value : test2ValueToBeUpdated.innerText = "Dar mokysis vairuotis: " + tex1Value;
-  return;
-}
-
-
-
-
+    const getLastP = document.querySelector('p:nth-last-of-type(1)');
+    getLastP.innerText = "L".repeat(raidziuSkaicius);
+      console.log(getLastP);
+      const getFirstP = document.querySelector('p:first-of-type');
+      getFirstP.innerText = "L".repeat(raidziuSkaicius);
+        console.log(getFirstP);
+    
+})
