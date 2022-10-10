@@ -2,7 +2,7 @@ const container = document.getElementById("container");
 
 function makeRows(rows, cols) {
   let rowSize = 1;
-  let columnSize = 20;
+  let columnSize = 1;
   container.style.setProperty("--grid-rows", rows);
   container.style.setProperty("--grid-cols", cols);
   for (c = 0; c < rows * cols; c++) {
@@ -15,13 +15,30 @@ function makeRows(rows, cols) {
     } else {
       rowSize++;
     }
-
     if (columnSize === 1) {
-      columnSize = 20;
+      columnSize += 1;
     } else {
-      columnSize--;
+      columnSize++;
     }
   }
 }
 
-makeRows(20, 30);
+makeRows(30, 30);
+
+const gridArray = document.querySelectorAll(".grid-item");
+
+function checkIfArray(array) {
+  // function to check if data is array
+  array;
+  let arrayBl = null;
+  if (array instanceof Array) {
+    arrayBl = true;
+    console.log(arrayBl);
+  } else {
+    arrayBl = false;
+    console.log(arrayBl);
+  }
+  return arrayBl;
+}
+
+checkIfArray(randomArray);
