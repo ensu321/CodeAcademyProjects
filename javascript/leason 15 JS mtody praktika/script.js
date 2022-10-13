@@ -521,8 +521,9 @@ const getX2button = document
   .addEventListener("click", functionX2);
 function functionX2() {
   const getDIV = document.querySelector("#canvas");
-  getDIV.style.width = "400px";
-  return getDIV;
+  let divsWidth = getComputedStyle(getDIV).width;
+  getDIV.style.width = `${divsWidth}`;
+  return;
 }
 
 const getX4button = document.getElementById("x4");
