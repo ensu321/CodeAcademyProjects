@@ -101,20 +101,21 @@
 // console.log(padvigubins("pet545ras"));
 // splittedIntoLetters.map((a) => a + a).join("");
 
-// const dublicateAllLetters = (text) =>
+// const duplicateAllLetters = (text) =>
 //   text
 //     .split("")
 //     .map((element) => (element.match(/[a-z]/i) ? element.repeat(2) : element))
 //     .join("");
-// console.log(duplicateAllLetters("Petras 123 Slekys"));
+// console.log(duplicateAllLetters("string"));
 
 // const duplicateAllLetters = (text) =>
 //   text
 //     .split("")
 //     .map((element) => (element.match(/[a-z]/i) ? element.repeat(2) : element))
 //     .join("");
-// console.log(duplicateAllLetters("Petras 123 Slekys"));
+// console.log(duplicateAllLetters("string"));
 
+//4 uzduotys postal code
 // const isValidPostCode = (postCode) =>
 //   /^[0-9]{5}|[0-9]{3}[A-Za-z]{2}$/.test(postCode);
 // console.log(isValidPostCode("abc123"));
