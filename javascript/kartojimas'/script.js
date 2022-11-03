@@ -892,3 +892,53 @@ function createFormWithDiv(
 //     alert("neatspejai");
 //   }
 // }
+
+//Pakoreguokite penktą pratimą, kad skaičiuotų iš kelinto karto atspėjai ir tai parašytų alert'e.
+// createFormWithDiv("number1", "number1Input", "number");
+// let counter = 0;
+// const modifyget1value = document
+//   .getElementById("number1Input")
+//   .setAttribute("max", 5);
+// const getForm = document
+//   .querySelector("form")
+//   .addEventListener("submit", (event) => {
+//     event.preventDefault();
+//     counter++;
+//     const get1value = document.getElementById("number1Input").value;
+//     doEverything(get1value, counter);
+//   });
+
+// function doEverything(get1value, counter) {
+//   let randomNumber = Math.floor(Math.random() * 5) + 1;
+//   console.log(randomNumber);
+//   console.log("inputvalue", get1value);
+//   console.log("counter", counter);
+//   if (randomNumber == get1value) {
+//     alert(`atspejai is ${counter} karto.`);
+//   } else {
+//     alert("neatspejai");
+//   }
+// }
+
+//H1 elemente parašykite savo vardą. Paspaudus ant vardo - tegul jūsų vardas atsiranda per vidurį ekrano, dvigubai didesniu font'o dydžiu ir raudona spalva.
+// let vardas = document.getElementById("vardas");
+
+// vardas.style.display = "flex";
+// vardas.style.justifyContent = "center";
+// vardas.style.fontSize = "4rem";
+// vardas.style.color = "red";
+
+//Išbandome ekraną. Sukurkite mygtuką su HTML. JS pasirašykite, kad mygtukas position: absolute ir jo lokacija - viršus, kairė. Paspaudus ant mygtuko, jis turi peršokti į apačią dešinę pusę. Paspaudus vėl - į viršų, kairę pusę. Ir taip šokinėti įstrižai per ekraną kiekvieno paspaudimo metu.
+
+let mygtukas = document.getElementById("mygtukas");
+mygtukas.addEventListener("click", changePosition);
+mygtukas.style.position = "absolute";
+mygtukas.style.top = 0;
+mygtukas.style.left = 0;
+
+function changePosition() {
+  mygtukas.style.top = "1000px";
+  mygtukas.style.left = "1000px";
+  mygtukas.style.bottom = 0;
+  mygtukas.style.right = 0;
+}
