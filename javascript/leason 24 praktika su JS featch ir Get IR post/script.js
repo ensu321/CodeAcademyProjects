@@ -34,6 +34,7 @@ function renderCards(data) {
     PropertyPrice.innerText = `${property.price}€`;
 
     const PropertyCity = document.createElement("p");
+    PropertyCity.setAttribute("class", "city");
     PropertyCity.innerText = property.city;
 
     const PropertyDescription = document.createElement("p");
@@ -58,13 +59,39 @@ function renderPropertyFilterButtons(cities) {
   cities.forEach((element) => {
     const PropertyCity = document.createElement("button");
     PropertyCity.innerText = element;
-    PropertyCity.setAttribute("city", `${element}`);
     FilterContainer.append(PropertyCity);
   });
 }
 
-const getButton = document
-  .querySelector("button")
-  .addEventListener("click", filterGallery);
+let getButtons = [];
+setTimeout(() => {
+  let btns = document.querySelectorAll("button");
+  getButtons = Array.from(btns);
 
-function filterGallery() {}
+  getButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      getButtons.forEach((button) => {
+        button.classList.remove("selected");
+      });
+      button.classList.add("selected");
+      filterFunction(getButtons);
+    });
+  });
+}, "1000");
+
+function filterFunction(getButtons) {
+  let getSelectedButton = document.getElementsByClassName("selected");
+  let arrayFromgetSelectedButton = Array.from(getSelectedButton);
+  let firstItem = arrayFromgetSelectedButton[0];
+
+  let getElementsKaunas = document.querySelectorAll(".city");
+  let ArrayFromgetElementsKaunas = Array.from(getElementsKaunas);
+
+  ArrayFromgetElementsKaunas.forEach((element) => {
+    if (firstItem.innerText === element.innerText) {
+      element.parentElement.style.display = "block";
+    } else {
+      element.parentElement.style.display = "none";
+    }
+  });
+}
