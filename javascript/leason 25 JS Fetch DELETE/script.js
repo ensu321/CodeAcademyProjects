@@ -52,7 +52,7 @@ function renderGETData(data) {
   });
 }
 
-async function handleDelete(id) {
+function handleDelete(id) {
   fetch(`https://golden-whispering-show.glitch.me/${id}`, {
     method: "DELETE",
   })
@@ -64,7 +64,8 @@ async function handleDelete(id) {
       }
     })
     .then((data) => {
-      console.log("data");
+      location.reload();
+      console.log(data);
     })
     .catch((error) => {
       console.error(error);
