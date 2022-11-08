@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+#MainWrap {
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    align-self: center;
+   
+    background-color: #87CEEB;
+    border-radius: 25px;
+  
+}
+
+#socialInfo {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    background-color: #87CEEB;
+    flex: 1;
+    border-radius: 25px;
+   
+}
+
+#experienceCards {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapGeneratedExperienceCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.wrapExperienceYersAndCompany {
+    display: flex;
+    flex-direction: column;
+}
+
+.years {
+    display: flex;
+}
+
+.company {
+    display: flex;
+}
+
+.wrapExperiencePositionAndCompany {
+    display: flex;
+    flex-direction: column;
+}
+
+.position {
+    display: flex;
+    padding: 0;
+}
+
+.description {
+    display: flex;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: flex-start;
+    height: 80vh;
+    width: 75%;
+    background-color: #87CEEB	;
+    flex:3;
+    border-radius: 25px;
+    background-color: white	;
+}
+
+#name {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#profesion {
+    color: white	;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+#wrapImgNameProfession {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+#profileImage {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    max-width: 120px;
+}
+#allrights {
+    color: white;
+    font-size: 0.7rem;
+}
+#info {
+    padding-left: 5vw;
+}
+
+
+#skills {
+    display: flex;
+    flex-direction: column;
+}
+.progressWrap {
+    width: 90%;
+    border: 1px solid aqua;
+    border-radius: 5px;
+}
+
+.progressBar {
+    height: 10px;
+    background-color: aqua;
+    border:1px solid lightblue;
+}
