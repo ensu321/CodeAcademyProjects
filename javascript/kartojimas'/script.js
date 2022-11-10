@@ -930,15 +930,85 @@ function createFormWithDiv(
 
 //Išbandome ekraną. Sukurkite mygtuką su HTML. JS pasirašykite, kad mygtukas position: absolute ir jo lokacija - viršus, kairė. Paspaudus ant mygtuko, jis turi peršokti į apačią dešinę pusę. Paspaudus vėl - į viršų, kairę pusę. Ir taip šokinėti įstrižai per ekraną kiekvieno paspaudimo metu.
 
-let mygtukas = document.getElementById("mygtukas");
-mygtukas.addEventListener("click", changePosition);
-mygtukas.style.position = "absolute";
-mygtukas.style.top = 0;
-mygtukas.style.left = 0;
+// let mygtukas = document.getElementById("mygtukas");
+// mygtukas.addEventListener("click", changePosition);
+// mygtukas.style.position = "absolute";
+// mygtukas.style.top = 0;
+// mygtukas.style.left = 0;
 
-function changePosition() {
-  mygtukas.style.top = "1000px";
-  mygtukas.style.left = "1000px";
-  mygtukas.style.bottom = 0;
-  mygtukas.style.right = 0;
-}
+// let isInOriginalPosition = true;
+
+// function changePosition() {
+//   mygtukas.style.cssText = isInOriginalPosition
+//     ? "position:absolute; bottom:0; right:0;"
+//     : "position:absolute; top:0; left:0;";
+//   isInOriginalPosition = !isInOriginalPosition;
+// }
+
+//Pakoreguokite antrą pratimą, kad mygtukas suktųsi ratu - laikrodžio rodykle.
+
+// let mygtukas = document.getElementById("mygtukas");
+// mygtukas.addEventListener("click", changePosition);
+// mygtukas.style.position = "absolute";
+// mygtukas.style.top = 0;
+// mygtukas.style.left = 0;
+
+// let counter = 0;
+// console.log(counter);
+
+// function changePosition() {
+//   if (counter === 0) {
+//     mygtukas.style.cssText = "position:absolute; top:0; right:0;";
+//     counter++;
+//   } else if (counter === 1) {
+//     mygtukas.style.cssText = "position:absolute; bottom:0; right:0;";
+//     counter++;
+//   } else if (counter === 2) {
+//     mygtukas.style.cssText = "position:absolute; bottom:0; left:0;";
+//     counter++;
+//   } else {
+//     mygtukas.style.cssText = "position:absolute; top:0; left:0;";
+//     counter = 0;
+//   }
+// }
+
+//Sukurkite input elementą (formos ar mygtuko nereikia), kur vartotojas galės įrašyti savo vardą. Kai rašo - keičiasi puslapio stilius. Jei įrašytos yra du simboliai arba mažiau - viso puslapio fonas raudonas. Jei daugiau nei du simboliai - puslapio fonas žalias.
+
+// const getInput = document.getElementById("inputas");
+// getInput.addEventListener("input", () => {
+//   const name = event.target.value;
+//   document.body.style.backgroundColor = name.length > 3 ? "red" : "green";
+// });
+
+//Sukurkite mygtuką HTML'e. O su JS pasirašykite array su keturiom spalvom (["red", "green", "blue", "yellow"]). Paspaudus ant mygtuko - tegul jo spalva pasikeičia į atsitiktinę spalvą.
+
+// const colorArray = ["red", "green", "blue", "yellow"];
+
+// const getButtonClick = document.getElementById("mygtukas");
+// getButtonClick.addEventListener("click", () => {
+//   let randomNumber = Math.floor(Math.random() * 5);
+//   console.log(randomNumber);
+
+//   getButtonClick.style.background = colorArray[randomNumber];
+// });
+
+//Pasikoreguokime penktą pratimą - šį kartą array nereikės, keisime RGB spalvas. Paspaudus ant mygtuko, susigeneruoja trys random skaičiai (nuo 0 iki 255, imtinai), šie skaičiai atvaizduoja spalvų paletę (red, green, blue => RGB). Padarykite, kad paspaudus ant mygtuko, jo fono spalva pasikeistų į atsiktinę spalvą pagal RGB paletę.
+
+// const colorArray = ["red", "green", "blue", "yellow"];
+
+// const getButtonClick = document.getElementById("mygtukas");
+// getButtonClick.addEventListener("click", () => {
+//   let randomNumber1 = Math.floor(Math.random() * 256);
+//   console.log(randomNumber1);
+//   let randomNumber2 = Math.floor(Math.random() * 256);
+//   console.log(randomNumber2);
+//   let randomNumber3 = Math.floor(Math.random() * 256);
+//   console.log(randomNumber1);
+//   const generateRandomColor = `rgb(${randomNumber1}, ${randomNumber2}, ${randomNumber3})`;
+//   console.log(generateRandomColor);
+
+//   getButtonClick.style.background = `rgb(${randomNumber1},
+//     ${randomNumber2},
+//     ${randomNumber3}
+//   )`;
+// });

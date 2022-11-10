@@ -45,12 +45,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
     
 }
 
 .wrapExperienceYersAndCompany {
     display: flex;
     flex-direction: column;
+    width: 40%;
 }
 
 .years {
@@ -64,6 +66,7 @@ body {
 .wrapExperiencePositionAndCompany {
     display: flex;
     flex-direction: column;
+    width: 40%;
 }
 
 .position {
