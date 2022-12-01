@@ -126,9 +126,10 @@ public class Main {
         Tankas tankas = new Tankas("Didelis", "T45");
          Tankas tanka2 = new Tankas("Didelis", "T456");
 
-         String temp = tankas;
-         tankas =
+        Tankas  temp = tankas;
+         tankas =tanka2;
+        tanka2 = temp;
+
+
         System.out.println(tankas.Modelis);
-        tanka2.Modelis = tankas.Modelis;
-        System.out.println(tanka2.Modelis);
 }}
