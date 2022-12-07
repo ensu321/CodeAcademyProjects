@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/VIGI40" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java tankai/VIGI40" vcs="Git" />
   </component>
 </project>
