@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/tankai.iml" filepath="$PROJECT_DIR$/tankai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaTankai.iml" filepath="$PROJECT_DIR$/JavaTankai.iml" />
     </modules>
   </component>
 </project>
