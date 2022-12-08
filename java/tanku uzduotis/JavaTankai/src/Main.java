@@ -1,5 +1,6 @@
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -7,7 +8,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Tankas tankas = new Tankas(11, 0, Directions.East);
+        Tankas tankas = new Tankas(0, 0, Directions.East);
 
         Scanner scanner = new Scanner(System.in);
         boolean runProgram = true;
@@ -58,4 +59,9 @@ public class Main {
         System.out.println("Select command:");
 
     }
+
+
+
+
+
 }

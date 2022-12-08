@@ -1,10 +1,12 @@
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 
 public class Tankas {
     public int x;
     public int y;
 
+    public static ArrayList<String> tankCoordinates = new ArrayList<>();
     Directions direction;
 
     private static int counterStrikesNorth = 0;
@@ -26,6 +28,9 @@ public class Tankas {
 
     public void moveNorth() {
         y++;
+        Coordinates coordinates = new Coordinates(x,y);
+        coordinates.setX(x);
+        coordinates.setY(y);
         direction =  Directions.North;
         System.out.printf("%s Tank moved to north (y:%d,x:%d)\n", Main.getTimeStamp(), y, x);
 
@@ -33,6 +38,9 @@ public class Tankas {
 
     public void moveSouth() {
         y--;
+        Coordinates coordinates = new Coordinates(x,y);
+        coordinates.setX(x);
+        coordinates.setY(y);
         direction =  Directions.South;
         System.out.printf("%s Tank moved to south (y:%d,x:%d)\n", Main.getTimeStamp(), y, x); //isketi i funkcija kuri printintu, pakeisti vieta kur yra orentiation variable
 
@@ -41,6 +49,9 @@ public class Tankas {
 
     public void moveEast() {
         x++;
+        Coordinates coordinates = new Coordinates(x,y);
+        coordinates.setX(x);
+        coordinates.setY(y);
         direction =  Directions.East;
         System.out.printf("%s Tank moved to east (y:%d,x:%d)\n", Main.getTimeStamp(), y, x);
 
@@ -49,6 +60,9 @@ public class Tankas {
 
     public void moveWest() {
         x--;
+        Coordinates coordinates = new Coordinates(x,y);
+        coordinates.setX(x);
+        coordinates.setY(y);
         System.out.printf("%s Tank moved to West (y:%d,x:%d)\n", Main.getTimeStamp(), y, x);
         direction =  Directions.West;
 
@@ -77,6 +91,7 @@ public class Tankas {
                 counterStrikesNorth, counterStrikesEast, counterStrikesSouth, counterStrikesWest,  countStrikes());
 
     }
+
 
 
 

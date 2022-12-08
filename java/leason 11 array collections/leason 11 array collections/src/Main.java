@@ -58,29 +58,106 @@ public class Main {
 
 
         /// trecia uzduotis ---------------------------------------------------
+//        ArrayList<String> words = new ArrayList<>();
+//        words.add("namas");
+//        words.add("namas");
+//        words.add("ilgas labai zodis");
+//        words.add("upe");
+//        words.add("ir");
+//
+//
+//
+//        ArrayList<String> filteredArray = new ArrayList<>();
+//
+//        for (String word: words
+//             ) {
+//            if(!filteredArray.contains(word)) {
+//                filteredArray.add(word);
+//            }
+//
+//
+//        }
+//
+//        System.out.println(filteredArray);
+
+/////.4 uzduotis
+//            ArrayList<Integer> integersList = new ArrayList<>();
+//
+//
+//        integersList.add(1);
+//        integersList.add(2);
+//        integersList.add(3);
+//
+//        System.out.println(integersList);
+//
+//        integersList.remove(0);
+//        integersList.remove(0);
+//        System.out.println(integersList);
+
+///5 uzduotis
+
+        Scanner scanner = new Scanner(System.in);
         ArrayList<String> words = new ArrayList<>();
-        words.add("namas");
-        words.add("namas");
-        words.add("ilgas labai zodis");
-        words.add("upe");
-        words.add("ir");
 
 
+        boolean loopContinuew = true;
 
-        ArrayList<String> filteredArray = new ArrayList<>();
 
-        for (String word: words
-             ) {
-            if(!filteredArray.contains(word)) {
-                filteredArray.add(word);
+        String userInput = "";
+        while (loopContinuew) {
+            if (userInput.equals("x")) {
+                loopContinuew = false;
+                break;
+            };
+
+            while (loopContinuew) {
+
+
+                if (userInput.equals("x")) {
+
+                    break;
+                }
+
+                else  {
+                    System.out.println("Iveskite zodi kuri norite isaugoti sarase");
+                    userInput = scanner.nextLine().toLowerCase();
+                    if(userInput.equals("x")) {
+                        break;
+                    }
+                    words.add(userInput);
+                    System.out.println(words);
+                }
+
             }
 
+            System.out.println("Koki zodi rasti?");
+            userInput = scanner.nextLine().toLowerCase();
 
+            for (int i = 0; i < words.size(); i++) {
+                if(words.contains(userInput)) {
+                    System.out.println("Numeris sarase: "+ i);
+                }
+                else {
+                    System.out.println("zodis nerastas");
+                }
+            }
+
+            System.out.println("koki zodi istrinti?");
+            userInput = scanner.nextLine().toLowerCase();
+            for (int i = 0; i < words.size(); i++) {
+                if(words.contains(userInput)) {
+                    words.remove(words.get(i));
+                    System.out.println("zodis buvo istrintas");
+                }
+                else {
+                    System.out.println("zodis nerastas");
+                }
+            }
+            System.out.println(words);
+            words.clear();
         }
 
-        System.out.println(filteredArray);
-
-
+        scanner.close();
 
 
     }
