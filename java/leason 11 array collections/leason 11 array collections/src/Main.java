@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
@@ -96,69 +97,83 @@ public class Main {
 
 ///5 uzduotis
 
-        Scanner scanner = new Scanner(System.in);
-        ArrayList<String> words = new ArrayList<>();
+//        Scanner scanner = new Scanner(System.in);
+//        ArrayList<String> words = new ArrayList<>();
+//
+//
+//        boolean loopContinuew = true;
+//
+//
+//        String userInput = "";
+//        while (loopContinuew) {
+//            if (userInput.equals("x")) {
+//                loopContinuew = false;
+//                break;
+//            };
+//
+//            while (loopContinuew) {
+//                if (userInput.equals("x")) {
+//                    break;
+//                }
+//                else  {
+//                    System.out.println("Iveskite zodi kuri norite isaugoti sarase");
+//                    userInput = scanner.nextLine().toLowerCase();
+//                    if(userInput.equals("x")) {
+//                        break;
+//                    }
+//                    words.add(userInput);
+//                    System.out.println(words);
+//                }
+//            }
+//
+//            System.out.println("Koki zodi rasti?");
+//            userInput = scanner.nextLine().toLowerCase();
+//
+//            for (int i = 0; i < words.size(); i++) {
+//                if(words.contains(userInput)) {
+//                    System.out.println("Numeris sarase: "+ i);
+//                }
+//                else {
+//                    System.out.println("zodis nerastas");
+//                }
+//            }
+//
+//            System.out.println("koki zodi istrinti?");
+//            userInput = scanner.nextLine().toLowerCase();
+//            for (int i = 0; i < words.size(); i++) {
+//                if(words.contains(userInput)) {
+//                    words.remove(words.get(i));
+//                    System.out.println("zodis buvo istrintas");
+//                }
+//                else {
+//                    System.out.println("zodis nerastas");
+//                }
+//            }
+//            System.out.println(words);
+//            words.clear();
+//        }
+//
+//        scanner.close();
+        // 6 zuduotis
+        LinkedList<String> linkedStringList = new LinkedList<>();
+        System.out.println(linkedStringList);
+        linkedStringList.add("namas");
+        linkedStringList.add("stalas");
+        linkedStringList.add("dviratis");
+        linkedStringList.add("telefas");
+        System.out.println(linkedStringList);
 
+        System.out.println(linkedStringList.getFirst());
+        System.out.println(linkedStringList.getLast());
 
-        boolean loopContinuew = true;
-
-
-        String userInput = "";
-        while (loopContinuew) {
-            if (userInput.equals("x")) {
-                loopContinuew = false;
-                break;
-            };
-
-            while (loopContinuew) {
-
-
-                if (userInput.equals("x")) {
-
-                    break;
-                }
-
-                else  {
-                    System.out.println("Iveskite zodi kuri norite isaugoti sarase");
-                    userInput = scanner.nextLine().toLowerCase();
-                    if(userInput.equals("x")) {
-                        break;
-                    }
-                    words.add(userInput);
-                    System.out.println(words);
-                }
-
-            }
-
-            System.out.println("Koki zodi rasti?");
-            userInput = scanner.nextLine().toLowerCase();
-
-            for (int i = 0; i < words.size(); i++) {
-                if(words.contains(userInput)) {
-                    System.out.println("Numeris sarase: "+ i);
-                }
-                else {
-                    System.out.println("zodis nerastas");
-                }
-            }
-
-            System.out.println("koki zodi istrinti?");
-            userInput = scanner.nextLine().toLowerCase();
-            for (int i = 0; i < words.size(); i++) {
-                if(words.contains(userInput)) {
-                    words.remove(words.get(i));
-                    System.out.println("zodis buvo istrintas");
-                }
-                else {
-                    System.out.println("zodis nerastas");
-                }
-            }
-            System.out.println(words);
-            words.clear();
-        }
-
-        scanner.close();
-
+        linkedStringList.pop();
+        System.out.println(linkedStringList);
+        linkedStringList.pollLast();
+        System.out.println(linkedStringList);
+        linkedStringList.push("lekste");
+        System.out.println(linkedStringList);
+        linkedStringList.removeLast();
+        System.out.println(linkedStringList);
 
     }
 }
