@@ -68,7 +68,7 @@ public class Main {
                 case "1" -> enterStudentData(scanner);
                 case "2" -> getStudent(scanner);
                 case "3" -> keepLooping = false;
-                default -> System.out.println("incorrect input");
+                default -> System.out.println("Incorrect input");
             }
 
         }
@@ -77,8 +77,8 @@ public class Main {
     }
 
     private static void printCommands() {
-        System.out.println("[1] - enter student:");
-        System.out.println("[2] - get student by the student number:");
+        System.out.println("[1] - enter student");
+        System.out.println("[2] - get student by the student number");
         System.out.println("[3] - end program");
     }
 
@@ -107,7 +107,7 @@ public class Main {
     static void getStudent(Scanner scanner) {
         System.out.println("Enter student number");
         String studentNumber = scanner.nextLine();
-        System.out.printf("Vardas: %s\nPavarde: %s\nUniversity: %s\n", theStudentMAP.get(studentNumber).name,
+        System.out.printf("Name: %s\nSurname: %s\nUniversity: %s\n", theStudentMAP.get(studentNumber).name,
                 theStudentMAP.get(studentNumber).surname,  theStudentMAP.get(studentNumber).university);
 
 
