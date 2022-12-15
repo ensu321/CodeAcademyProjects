@@ -1,5 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        PositiveNumber positiveNumber = new PositiveNumber();
+
+        positiveNumber.generate();
+        positiveNumber.sum(int[] name);
+
+
     }
 }
