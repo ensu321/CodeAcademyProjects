@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73e7126c-455f-4837-8df1-6b5b0c1a4585" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../leason 17 interfaces/leason 17 interface/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../leason 17 interfaces/leason 17 interface/src/task1/Figate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../leason 17 interfaces/leason 17 interface/src/task1/IsLandVehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../leason 17 interfaces/leason 17 interface/src/task1/IsSeaVessel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../leason 17 interfaces/leason 17 interface/src/task1/IsVehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../leason 17 interfaces/leason 17 interface/src/task1/Jeep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../leason 17 interfaces/leason 17 interface/src/task2/IsEmergency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../leason 17 interfaces/leason 17 interface/src/task2/PoliceCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../leason 17 interfaces/leason 17 interface/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../leason 17 interfaces/leason 17 interface/src/Main.java" afterDir="false" />
+    <list default="true" id="d97b26c4-4499-4b2a-a8cb-68164e5628fd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../leason 16 abstract classses/leason 16 abstract classes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../leason 16 abstract classses/leason 16 abstract classes/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leason 17 interface.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -30,7 +29,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2IummXEBamVq1lqhwQkBWlhREwd" />
+  <component name="ProjectId" id="2IxRScIOrifbKySONVVndQ6tX1O" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -40,17 +39,19 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/liosa/Desktop/CodeAcademyProjects/java/leason 17 interfaces"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/liosa/Desktop/CodeAcademyProjects/java/leason 17 interface",
+    "settings.editor.selected.configurable": "copyright"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="73e7126c-455f-4837-8df1-6b5b0c1a4585" name="Changes" comment="" />
-      <created>1671040002079</created>
+      <changelist id="d97b26c4-4499-4b2a-a8cb-68164e5628fd" name="Changes" comment="" />
+      <created>1671121249059</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1671040002079</updated>
+      <updated>1671121249059</updated>
     </task>
     <servers />
   </component>
