@@ -5,14 +5,14 @@ public class PositiveNumber extends Number{
 
 
     @Override
-    void generate() {
+    int[] generate() {
         for (int j = 0; j < randomNumber; j++) {
             int min = 0;
             int max = 199;
             int range1 = max - min + 1;
             numbers[j] = (int)(Math.random() * range1) + min;
         }
-        System.out.println(Arrays.toString(numbers));
+        return numbers;
     }
 
 

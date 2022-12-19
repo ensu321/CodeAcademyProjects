@@ -10,13 +10,13 @@ public abstract class Number {
     protected int[] numbers = new int[randomNumber];
 
 
-     abstract void generate();
+     abstract int[] generate();
 
      public int sum(int[] numberArray) {
          for (int i = 0; i < numbers.length; i++) {
              sum += numberArray[i];
          }
-         return sum;
+         return  sum;
      }
 
 }
