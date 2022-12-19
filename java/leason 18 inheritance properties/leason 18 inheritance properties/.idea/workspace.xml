@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5dc094b8-6b2d-4003-8b56-ec060e260eae" name="Changes" comment="gg">
-      <change afterPath="$PROJECT_DIR$/src/task2/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/task2/B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/task2/X.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/task3/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/task3/B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/task3/L.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/task3/S.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leason 18 inheritance properties/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leason 18 inheritance properties/Number.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leason 18 inheritance properties/Number.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leason 18 inheritance properties/PositiveNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leason 18 inheritance properties/PositiveNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PositiveNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PositiveNumber.java" afterDir="false" />
-    </list>
+    <list default="true" id="5dc094b8-6b2d-4003-8b56-ec060e260eae" name="Changes" comment="gg" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
